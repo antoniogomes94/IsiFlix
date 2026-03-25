@@ -1,0 +1,21 @@
+info:
+  name: keyword
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8000/keywords
+  body:
+    type: json
+    data: |-
+      {
+        "keyword":"Bebidas"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
